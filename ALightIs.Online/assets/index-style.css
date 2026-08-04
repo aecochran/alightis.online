@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: clamp(5px, 1.53vw, 14px);
+}
+
+html, body, h1, p, ul {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #00002b;
+}
+
+
+main {
+    flex: 1;
+    font-size: clamp(12px, 1.52vw, 14px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.25rem;
+
+}
+
+.under-construction {
+    font-family: 'Splash';
+    position: relative;
+    top: 6rem;
+    color: #f0f8ff;
+    font-size: 7rem;
+    text-align: center;
+    margin: 2rem 0;
+    text-shadow: 2px 2px 4px #ffff00D3, -2px -2px 4px #ffb300D3;
+}
+
+/* Branding Styling */
+
+.branding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10.1rem;
+
+}
+
+a.branding {
+    display: inline-flex;
+}
+
+.branding #logo {
+    height: 14.0625rem;
+}
+
+.branding #wordmark #site-title {
+    position:relative;
+    height: 9.375rem;
+    bottom: -2.625rem;
+}
+.branding #wordmark {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.branding #wordmark p #subtitle {
+    height: 3rem;
+}
+
+
+
+/* Footer Styling */
+
+footer {
+    padding: .5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.075rem;
+    font-size: .25rem;
+    min-height: 2.25rem;
+}
+
+footer p, footer a {
+    letter-spacing: 0.075rem;
+    font-size: max(.9rem,10px);
+}
+
+footer a {
+    color: #f4f487;
+    text-decoration: none;
+}  

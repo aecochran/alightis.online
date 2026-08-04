@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: clamp(5px, 2.3vw, 14px);
+}
+
+html, body, h1, p, ul {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Header Styling */
+
+header {
+    background-color: #000f32;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header div.branding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10.1rem;
+    box-shadow: inset -2px -2px 2px #00002F,
+        inset 2px 2px 2px #000030,
+        inset -3px -3px 3px #003C58,
+        inset 3px 3px 3px #003C58;
+}
+
+
+
+header a.branding {
+    display: inline-flex;
+}
+
+header .branding #logo {
+    height: 9.375rem;
+}
+
+header .branding #wordmark #site-title {
+    position:relative;
+    height: 6.25rem;
+    bottom: -1.75rem;
+}
+header .branding #wordmark {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header .branding #wordmark p #subtitle {
+    height: 2rem;
+}
+
+/* Navigation Styling */
+
+
+header nav {
+    background-image: linear-gradient(to bottom, #00002b, #003C58);
+    display: flex;
+    align-items: stretch;
+}
+
+header nav ul {
+    list-style: none;
+    font-family: 'Balthazar', serif;
+    font-size: clamp(14px, 3.7vw, 21px);
+    text-decoration: none;
+    display: flex;
+    width: 43rem
+}
+
+header nav ul li {
+    box-shadow: inset 2px 2px 2px #003C58,
+                inset -2px -2px 2px #00002b;
+    flex-grow: 1;
+    }
+
+header nav ul li a {
+    display: flex;   
+    justify-content:center;
+    text-decoration: none;
+    color: #F7F6ED;
+    padding: .75rem 1.5rem;
+}
+
+header nav .nav-spacer {
+    flex-grow: 1;
+    box-shadow: inset 2px 0px 2px #003C58,
+                inset 0px 2px 2px #002b4b,
+                inset -2px -2px 2px #00002b;
+    background-image: linear-gradient(to bottom, #00002b, #002b4b);
+}
+
+header nav .current-page{
+    background-color: #003C58;
+    background-image: linear-gradient(to top, #003C58, #001d33);
+}
+
+/* Footer Styling */
+
+footer {
+    padding: .5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.075rem;
+    font-size: .25rem;
+    background-image: linear-gradient(to top, #00002b, #002b4b);
+    box-shadow: inset 2px 2px 2px #00002b;
+    min-height: 2.25rem;
+}
+
+footer p, footer a {
+    letter-spacing: 0.075rem;
+    font-size: max(.9rem,10px);
+}
+
+footer a {
+    color: #f4f487;
+    text-decoration: none;
+}  
