@@ -50,4 +50,5 @@ Additional notes, tasks and comments can be found throughout the source code.
 ## AI Usage
 AI (ChatGPT and VS Code Copilot features) is used as a teaching tool, code reviewer, and debugging aid. All accepted changes are reviewed before being committed.
 
-This README was initially drafted by ChatGPT for the larger in-progress version of the site. After deciding to publish an earlier version, AECochran revised it to reflect the current scope and status of the project.
+This README was initially drafted by ChatGPT for the larger in-progress version of the site. 
+After deciding to publish ALightIs.Online as a deliberately in-progress website, AECochran revised the original README to reflect the current scope and status of the project.
