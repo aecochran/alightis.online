@@ -12,7 +12,7 @@ html, body, h1, p, ul {
 }
 
 body {
-    min-height: 100vh;
+    min-height: calc(100dvh - 2.25rem);
     display: flex;
     flex-direction: column;
 }
@@ -121,6 +121,7 @@ footer {
     background-image: linear-gradient(to top, #00002b, #002b4b);
     box-shadow: inset 2px 2px 2px #00002b;
     min-height: 2.25rem;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 footer p, footer a {

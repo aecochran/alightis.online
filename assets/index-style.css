@@ -12,7 +12,7 @@ html, body, h1, p, ul {
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     background-color: #00002b;
@@ -87,6 +87,7 @@ footer {
     letter-spacing: 0.075rem;
     font-size: .25rem;
     min-height: 2.25rem;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 footer p, footer a {

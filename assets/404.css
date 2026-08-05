@@ -1,0 +1,7 @@
+main .page-contents {
+    align-items: center;
+    justify-content: center;
+}
+main .page-contents img {
+    margin: 2rem;
+}

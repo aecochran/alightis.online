@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+}
+caption {
+    caption-side: bottom;
+    padding: .71rem;
+    font-style: italic;
+}
+th {
+    padding: .71rem;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #000;
+    background-color: #003C5880;
+}
+td {
+    padding: .71rem;
+    border: 1px solid #000;
+}
+tbody tr td:first-of-type {
+    font-weight: 600;
+}
