@@ -4,4 +4,5 @@ main .page-contents {
 }
 main .page-contents img {
     margin: 2rem;
+    max-width: 80%;
 }

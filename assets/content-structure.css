@@ -1,0 +1,56 @@
+main p {
+    margin: .75rem;
+    line-height: 1.5em;
+}
+main #hero-banner {
+    margin-top: 1rem;
+}
+
+main .h3 h4:nth-of-type(n+2) {
+    margin-top: 1rem;
+}
+
+main h2 {
+    font-size: 2.2em;
+    margin-bottom: .1rem;
+}
+
+main h3 {
+    font-size: 1.4em;
+    padding: .5rem;
+}
+
+main .h3 {
+    padding-left: 2.75em;
+}
+
+main h4 {
+    font-size: 1.25em;
+}
+
+main .h4 {
+    padding-left: 2em;
+}
+
+main h5 {
+    font-size: 1.1em;
+    margin: .8rem 0 .5rem 0;
+}
+
+main .h5 {
+    padding-left: 1.5rem;
+}
+
+main h6 {
+    font-size: 1em;
+    margin: .8rem 0 .5rem 0;
+}
+
+main .h6 {
+    padding-left: 1rem;
+}
+
+#font-credits ul li:nth-of-type(n+2),
+.h6 ul li:nth-of-type(n+2) {
+    padding-top: .25rem;
+}
