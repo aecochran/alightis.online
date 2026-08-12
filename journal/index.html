@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/page-layout.css">
     <link rel="stylesheet" type="text/css" href="../assets/content-structure.css">
     <link rel="stylesheet" type="text/css" href="../assets/tables.css">
+    <link rel="stylesheet" type="text/css" href="../assets/journal-layout.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
@@ -48,6 +49,62 @@
         <section class="page-contents">
             <main>
                 <h2>Journal</h2>
+                <section class="journal-entry" id="20260811">
+                    <h3><time datetime="2026-08-11">August 11, 2026</time></h3>
+                    <section class="development-log">
+                        <h4>Development Log</h4>
+                        <ul>
+                            <li>Tested site on desktop and mobile.</li>
+                            <li>Verified that bookmarking my site on my iPhone resulted in displaying my favicon on the
+                                desktop!</li>
+                            <li>Determined 404 page does not work correctly if it is routed to from within a directory.
+                                <ul>
+                                    <li>Issue: CSS does not load.</li>
+                                    <li>Issue: Links do not resolve to correct locations.</li>
+                                    <li>Root Cause: Page-relative linking. Need to include absolute links instead of
+                                        relative links, at least for 404 page.</li>
+                                </ul>
+                            </li>
+                            <li>Imported journal.</li>
+                            <li>Began CSS for journal.</li>
+                            <li>Added text shadow for current-page in main nav.</li>
+                        </ul><!--Development Log UL-->
+                    </section><!--class="development-log"-->
+                    <section class="todo">
+                        <h4>Todo</h4>
+                        <ul>
+                            <li>After commit, site map is missing journal link in header — Should be fixed by next
+                                commit.</li>
+                            <li>Ended up on <code>credits.html</code>. Need to determine which file is linking to that
+                                page.<ul>
+                                    <li>Not able to reproduce.</li>
+                                    <li>Found a few cases of <code>credits/</code>.</li>
+                                    <li>Updated all of those to <code>credits/index.html</code>.</li>
+                                    <li>I don't think <code>credits/</code> likely caused the issue, but I'm not finding
+                                        <code>credits.html</code> in my code.
+                                        <ul>
+                                            <li>Will remove the page from my repository.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Test post-commit site.</li>
+                            <li>Update Configuration Registry.</li>
+                        </ul>
+                        <h4>Additional Todos</h4>
+                        <ul>
+                            <li>Write the personal About-Me page.</li>
+                            <li>Log bugs and releases in Jira. Add priorities and statuses.</li>
+                            <li>Refactor HTML and CSS for Credits page.</li>
+                            <li>Anonymize resume. Add and begin expanded details sections. Consider structuring by
+                                companies instead of dates.</li>
+                            <li>Project pages. Get all of that documented. Some are already up, but probably not
+                                finished and definitely not incorporated into the site map.</li>
+                            <li>Templates, eventually, so I don't have to copy and paste my header and footer every time
+                                and so I can handle the journal as daily files instead of a single massive html.</li>
+                        </ul>
+                    </section><!--class="todo"-->
+                </section>
                 <section class="journal-entry" id="20260806">
                     <h3><time datetime="2026-08-06">August 6, 2026</time></h3>
                     <section class="development-log">
@@ -63,7 +120,7 @@
                         </ul><!--Development Log UL-->
                     </section><!--class="development-log"-->
                     <section class="todo">
-                        <h4>TODO</h4>
+                        <h4>Todo</h4>
                         <ul>
                             <li>Write the personal About-Me page.</li>
                         </ul>
@@ -103,7 +160,7 @@
                         </ul><!--Development Log UL-->
                     </section><!--class="development-log"-->
                     <section class="todo">
-                        <h4>TODO</h4>
+                        <h4>Todo</h4>
                         <ul>
                             <li>Write the personal About-Me page.</li>
                         </ul>
@@ -124,11 +181,10 @@
                         <h4>Development Log</h4>
                         <ul>
                             <li>Began About-Me page.</li>
-                            <li>Figured out why I couldn't get ALightIs.Online to route to my GitHub Page - Had to
-                                remove
-                                WordPress.
+                            <li>Figured out why I couldn't get ALightIs.Online to route to my GitHub Page — Had to
+                                remove WordPress.
                             </li>
-                            <li>Developed html for 404 page - SVG.
+                            <li>Developed html for 404 page minus SVG.
                                 <ul>
                                     <li>JavaScript for the 404 page was suggested by VS Code. Accepted. Not yet tested.
                                     </li>
@@ -159,7 +215,7 @@
                         </ul><!--Development Log UL-->
                     </section><!--class="development-log"-->
                     <section class="todo">
-                        <h4>TODO</h4>
+                        <h4>Todo</h4>
                         <ul>
                             <li>Write the personal About-Me page.</li>
                             <li>Create an SVG for the 404 page.</li>
@@ -185,7 +241,6 @@
                         <li>Developed content for /home/index.html</li>
                     </ul>
                 </section>
-                <hr>
                 <section class="journal-entry" id="20260802">
                     <h3><time datetime="2026-08-02">August 2, 2026</time></h3>
                     <ul>
@@ -193,7 +248,6 @@
                         <li>Began tracking todo items in Jira.</li>
                     </ul>
                 </section>
-                <hr>
                 <section class="journal-entry" id="20260801 ">
                     <h3><time datetime="2026-08-01">August 1, 2026</time></h3>
                     <ul>
@@ -203,7 +257,6 @@
                         <li>Began styling hero banner and footer.</li>
                     </ul>
                 </section>
-                <hr>
                 <section class="journal-entry" id="20260731">
                     <h3><time datetime="2026-07-31">July 31, 2026</time></h3>
                     <ul>
@@ -212,7 +265,6 @@
                         <li>Started including information in Credits page.</li>
                     </ul>
                 </section>
-                <hr>
                 <section class="journal-entry" id="20260730">
                     <h3><time datetime="2026-07-30">July 30, 2026</time></h3>
                     <ul>
@@ -222,7 +274,6 @@
                         </li>
                     </ul>
                 </section>
-                <hr>
                 <section class="journal-entry" id="20260729">
                     <h3><time datetime="2026-07-29">July 29, 2026</time></h3>
                     <ul>
@@ -260,7 +311,6 @@
                         </li>
                     </ul>
                 </section>
-                <hr>
                 <section class="journal-entry" id="20260728">
                     <h3><time datetime="2026-07-28">July 28, 2026</time></h3>
                     <ul>
@@ -272,7 +322,6 @@
                         <li>Created a Jira account.</li>
                     </ul>
                 </section>
-                <hr>
                 <section class="journal-entry" id="20260727">
                     <h3><time datetime="2026-07-27">July 27, 2026</time></h3>
                     <ul>
@@ -282,7 +331,6 @@
                         <li>Applied to six jobs.</li>
                     </ul>
                 </section>
-                <hr>
                 <section class="journal-entry" id="20260724">
                     <h3><time datetime="2026-07-24">July 24, 2026</time></h3>
                     <ul>
@@ -290,7 +338,6 @@
                             websites, career pages, job boards, LinkedIn pages, etc.</li>
                     </ul>
                 </section>
-                <hr>
                 <section class="journal-entry" id="20260723">
                     <h3><time datetime="2026-07-23">July 23, 2026</time></h3>
                     <ul>
@@ -300,14 +347,12 @@
                             websites, career pages, job boards, LinkedIn pages, etc.</li>
                     </ul>
                 </section>
-                <hr>
                 <section class="journal-entry" id="20260722">
                     <h3><time datetime="2026-07-22">July 22, 2026</time></h3>
                     <ul>
                         <li>Additional initial development work on personal website.</li>
                     </ul>
                 </section>
-                <hr>
                 <section class="journal-entry" id="20260721">
                     <h3><time datetime="2026-07-21">July 21, 2026</time></h3>
                     <ul>

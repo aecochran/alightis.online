@@ -1,0 +1,54 @@
+main {
+    padding-top: 5.5rem;
+}
+
+main .page-contents {
+    background-color: #00000000;
+    box-shadow: none;
+}
+
+
+main .page-contents ul {
+    padding-left: 1.5rem;
+}
+
+main .page-contents li {
+    line-height: 1.5em;
+}
+
+main .page-contents .journal-entry {
+    background-color: #f0f8ff;
+    border-radius: 30px;
+    width: min(85dvw, 750px);
+    display: flex;
+    flex-direction: column;
+    margin: 1.25rem;
+    padding: 2rem 2rem;
+    box-shadow: -2px -2px 2px #0000001a,
+        2px 2px 2px #0000001a,
+        4px 4px 6px #0000001a,
+        -4px -4px 6px #0000001a,
+        -2px -2px 6px #0000001a,
+        2px 2px 6px #0000001a,
+        6px 6px 9px #0000001a,
+        -6px -6px 9px #0000001a,
+        -10px -10px 10px #0000001a,
+        10px 10px 10px #0000001a;
+}
+
+main .page-contents .journal-entry .development-log, main .page-contents .journal-entry .todo {
+    padding-left: .6rem;
+}
+
+main .page-contents .journal-entry .todo h4 {
+    margin-top: .5em;
+}
+
+main .page-contents .journal-entry code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .8em;
+    padding: .1em .3em;
+    border-radius: 5px;
+    border: solid #4495e0B3;
+    background-color: #4495e01a;
+}
