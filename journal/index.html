@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits</title>
+    <link rel="icon" type="image/png" href="../assets/key-branding/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="../assets/key-branding/favicon.svg">
+    <link rel="shortcut icon" href="../assets/key-branding/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/../assets/key-branding/apple-touch-icon.png">
+    <link rel="manifest" href="../assets/key-branding/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="../assets/header-footer-style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/page-layout.css">
+    <link rel="stylesheet" type="text/css" href="../assets/content-structure.css">
+    <link rel="stylesheet" type="text/css" href="../assets/tables.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <a class="branding" href="index.html">
+                <img id="logo" src="../assets/key-branding/Moonogram-icon-final.svg" alt="">
+                <div id="wordmark">
+                    <h1><img id="site-title" src="../assets/key-branding/ALightIs.Online.svg" alt="ALightIs.Online">
+                    </h1>
+                    <p><img id="subtitle" src="../assets/key-branding/A-Personal-Website.svg" alt="A Personal Website">
+                    </p>
+                </div>
+            </a> <!-- .branding -->
+        </div>
+        <nav aria-label="Main">
+            <div class="nav-spacer" aria-hidden="true"></div>
+            <ul>
+                <li id="home"><a href="../index.html">Home</a></li>
+                <li id="journal" class="current-page"><a href="../journal/index.html">Journal</a></li>
+                <li id="about-me"><a href="../about-me.html">About Me</a></li>
+                <li id="credits"><a href="../credits/index.html">Credits</a></li>
+            </ul>
+            <div class="nav-spacer" aria-hidden="true"></div>
+        </nav>
+    </header>
+    <main>
+        <section class="page-contents">
+            <main>
+                <h2>Journal</h2>
+                <section class="journal-entry" id="20260806">
+                    <h3><time datetime="2026-08-06">August 6, 2026</time></h3>
+                    <section class="development-log">
+                        <h4>Development Log</h4>
+                        <ul>
+                            <li>Made adjustments to 404.svg.</li>
+                            <li>Investigated why bookmarking my site on my iPhone did not result in saving my favicon.
+                            <li>Investigated margins issue. It appears to be resolved. I was using "margin" in places I
+                                should
+                                have been
+                                using "padding".</li>
+                            <li>Began reworking credits page and developing projects pages.</li>
+                        </ul><!--Development Log UL-->
+                    </section><!--class="development-log"-->
+                    <section class="todo">
+                        <h4>TODO</h4>
+                        <ul>
+                            <li>Write the personal About-Me page.</li>
+                        </ul>
+                        <h4>Additional Todos</h4>
+                        <ul>
+                            <li>Verify right margins for content cards and investigate why <code>&lt;p&gt;</code> and
+                                <code>&lt;a&gt;</code> elements are not properly contained in the display cards.
+                            </li>
+                            <li>Log bugs and releases in Jira. Add priorities and statuses.</li>
+                            <li>Integrate Change Log and/or Journal into published website.</li>
+                            <li>Refactor HTML and CSS for Credits page. </li>
+                        </ul>
+                    </section><!--class="todo"-->
+                </section>
+                <section class="journal-entry" id="20260805">
+                    <h3><time datetime="2026-08-05">August 5, 2026</time></h3>
+                    <section class="development-log">
+                        <h4>Development Log</h4>
+                        <ul>
+                            <li>Added table to credits.</li>
+                            <li>Some additional edits to table.</li>
+                            <li>Added CSS for table.</li>
+                            <li>Started an SVG for the 404 page.</li>
+                            <li>Investigated bottom padding issue. This seems like an iOS thing. I've implemented the
+                                fix I can
+                                find,
+                                but the issue remains. What I'm finding suggests it's an issue specific to when the
+                                Apple Glass
+                                (I think
+                                it's Apple Glass, anyway) nav bar is visible. I'm not finding anything suggestions other
+                                than
+                                the
+                                <code>padding-bottom: env(safe-area-inset-bottom);</code> and <code>dvh</code>
+                                suggestions,
+                                though.
+                            </li>
+                        </ul><!--Development Log UL-->
+                    </section><!--class="development-log"-->
+                    <section class="todo">
+                        <h4>TODO</h4>
+                        <ul>
+                            <li>Write the personal About-Me page.</li>
+                        </ul>
+                        <h4>Additional Todos</h4>
+                        <ul>
+                            <li>Verify right margins for content cards and investigate why <code>&lt;p&gt;</code> and
+                                <code>&lt;a&gt;</code> elements are not properly contained in the display cards.
+                            </li>
+                            <li>Log bugs and releases in Jira. Add priorities and statuses.</li>
+                            <li>Integrate Change Log and/or Journal into published website.</li>
+                            <li>Refactor HTML and CSS for Credits page. </li>
+                        </ul>
+                    </section><!--class="todo"-->
+                </section>
+                <section class="journal-entry" id="20260804">
+                    <h3><time datetime="2026-08-04">August 4, 2026</time></h3>
+                    <section class="development-log">
+                        <h4>Development Log</h4>
+                        <ul>
+                            <li>Began About-Me page.</li>
+                            <li>Figured out why I couldn't get ALightIs.Online to route to my GitHub Page - Had to
+                                remove
+                                WordPress.
+                            </li>
+                            <li>Developed html for 404 page - SVG.
+                                <ul>
+                                    <li>JavaScript for the 404 page was suggested by VS Code. Accepted. Not yet tested.
+                                    </li>
+                                </ul>
+                            </li><!--Developed html for 404 page - SVG.-->
+                            <li>Asked ChatGPT about why I was getting white space under my footer for my about me and
+                                credits
+                                pages.
+                                <ul>
+                                    <li>Turns out there's something called dynamic viewport height?</li>
+                                    <li>Updated existing <code>vh</code> values to <code>dvh</code></li>
+                                    <li>Learned about and implemented the <code>env(safe-area-inset-bottom)</code>
+                                        value/calculation.
+                                    </li>
+                                </ul>
+                            </li><!--Asked ChatGPT...-->
+                            <li>Wrote a blog post on why I was developing the about me page the way I was.</li>
+                            <li>Wrote a followup blog post on AI usage and word choice in that blog post</li>
+                            <li>Finished the About-Me Experience page.</li>
+                            <li>Started working on a professional About-Me page. Realized it wasn't an about me page.
+                                Finished a
+                                first
+                                draft
+                                of that document.</li>
+                            <li>Worked with ChatGPT to get insights to use to develop an actual professional about-me
+                                page.</li>
+                            <li>Started a blog post on developing the professional about-me page.</li>
+                        </ul><!--Development Log UL-->
+                    </section><!--class="development-log"-->
+                    <section class="todo">
+                        <h4>TODO</h4>
+                        <ul>
+                            <li>Write the personal About-Me page.</li>
+                            <li>Create an SVG for the 404 page.</li>
+                        </ul>
+                        <h4>Additional Todos</h4>
+                        <ul>
+                            <li>Verify right margins for content cards and investigate why <code>&lt;p&gt;</code> and
+                                <code>&lt;a&gt;</code> elements are not properly contained in the display cards.
+                            </li>
+                            <li>Log bugs and releases in Jira. Add priorities and statuses.</li>
+                            <li>Integrate Change Log and/or Journal into published website.</li>
+                            <li>Refactor HTML and CSS for Credits page. </li>
+                        </ul>
+                    </section><!--class="todo"-->
+                </section>
+                <section class="journal-entry" id="20260803">
+                    <h3><time datetime="2026-08-03 ">August 3, 2026</time></h3>
+                    <ul>
+                        <li>Updates to site structure to allow for page-specific styling, credits, changelogs, versions,
+                            etc.
+                        </li>
+                        <li>Workable limited responsiveness for header/footer CSS. Learned about clamp().</li>
+                        <li>Developed content for /home/index.html</li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="journal-entry" id="20260802">
+                    <h3><time datetime="2026-08-02">August 2, 2026</time></h3>
+                    <ul>
+                        <li>Finished initial styling for hero banner and footer.</li>
+                        <li>Began tracking todo items in Jira.</li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="journal-entry" id="20260801 ">
+                    <h3><time datetime="2026-08-01">August 1, 2026</time></h3>
+                    <ul>
+                        <li>Continued developing hero banner.</li>
+                        <li>Added journal entries for 7/30–8/1.</li>
+                        <li>Maintained Credits page.</li>
+                        <li>Began styling hero banner and footer.</li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="journal-entry" id="20260731">
+                    <h3><time datetime="2026-07-31">July 31, 2026</time></h3>
+                    <ul>
+                        <li>Finished developing moon icon.</li>
+                        <li>Began developing hero banner.</li>
+                        <li>Started including information in Credits page.</li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="journal-entry" id="20260730">
+                    <h3><time datetime="2026-07-30">July 30, 2026</time></h3>
+                    <ul>
+                        <li>Developed first draft of moon icon.</li>
+                        <li>Created individual files for monogram iterations for eventual inclusion in relevant project
+                            page.
+                        </li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="journal-entry" id="20260729">
+                    <h3><time datetime="2026-07-29">July 29, 2026</time></h3>
+                    <ul>
+                        <li>Watched the following videos:
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/watch?v=GPOWZSxEslU" target="_blank">
+                                        Jira Tutorial for Beginners — Learn Jira in 20 Minutes</a> by
+                                    <a href="https://www.youtube.com/@KevinStratvert" target="_blank">
+                                        Kevin Stratvert
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/watch?v=tTiAs4IKgdk" target="_blank">
+                                        How I'd Learn Jira in 1 Week in 2026 (if I had to start over)</a> by
+                                    <a href="https://www.youtube.com/@alvinthepmofficial" target="_blank">
+                                        Alvin the PM
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/watch?v=mjTgkm-h__M" target="_blank">
+                                        How To Think SO Clearly People Assume You're Brilliant</a> by
+                                    <a href="https://www.youtube.com/@SandeepSwadia" target="_blank">
+                                        Sandeep Swadia
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/watch?v=xLz9D9AqOIc" target="_blank">
+                                        Story vs Epic in Jira Explained in 10 Minutes!</a> by
+                                    <a href="https://www.youtube.com/@alvinthepmofficial" target="_blank">
+                                        Alvin the PM
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="journal-entry" id="20260728">
+                    <h3><time datetime="2026-07-28">July 28, 2026</time></h3>
+                    <ul>
+                        <li>Started working on a spreadsheet of data related to a mobile game called "Tokyo Debunker."
+                        </li>
+                        <li>Applied for 5 jobs, including a very stretch technical writer position.</li>
+                        <li>Caught up on journal entries.</li>
+                        <li>Fourth GitHub commit — second for this project. Included updated journal entries.</li>
+                        <li>Created a Jira account.</li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="journal-entry" id="20260727">
+                    <h3><time datetime="2026-07-27">July 27, 2026</time></h3>
+                    <ul>
+                        <li>Added html resume, job search database documentation, and personal website html files to
+                            GitHub.
+                        </li>
+                        <li>Applied to six jobs.</li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="journal-entry" id="20260724">
+                    <h3><time datetime="2026-07-24">July 24, 2026</time></h3>
+                    <ul>
+                        <li>Continued researching attendees to create a database including business names, official
+                            websites, career pages, job boards, LinkedIn pages, etc.</li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="journal-entry" id="20260723">
+                    <h3><time datetime="2026-07-23">July 23, 2026</time></h3>
+                    <ul>
+                        <li>Attended a job fair and began researching attendees to create a database including business
+                            names,
+                            official
+                            websites, career pages, job boards, LinkedIn pages, etc.</li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="journal-entry" id="20260722">
+                    <h3><time datetime="2026-07-22">July 22, 2026</time></h3>
+                    <ul>
+                        <li>Additional initial development work on personal website.</li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="journal-entry" id="20260721">
+                    <h3><time datetime="2026-07-21">July 21, 2026</time></h3>
+                    <ul>
+                        <li>Developed monogram and favicon.</li>
+                        <li>Began developing personal website.
+                            <ul>
+                                <li>Created main <a href="../index.html">index.html</a> page. Hand-coded HTML.</li>
+                                <li>Created files, <code>&lt;head&gt;</code> sections, headers, and footers for core
+                                    pages
+                                    (home.html,
+                                    projects/index.html, journal/index.html, about-me.html, credits.html).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+        </section>
+    </main>
+    <footer>
+        <p><span id="author"><a href="../about-me.html">AECochran</a></span>
+            <span class="bullet"> • </span>
+            <span id="credits"><a href="../credits/index.html">Credits</a></span>
+            <span class="bullet"> • </span>
+            <span id="site-map"><a href="../site-map.html">Site Map</a></span>
+        </p>
+    </footer>
+</body>
+
+</html>
