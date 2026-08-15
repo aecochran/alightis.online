@@ -17,8 +17,8 @@
     <link rel="stylesheet" type="text/css" href="../assets/journal-layout.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&family=Splash&family=Caveat&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -48,16 +48,50 @@
     <main>
         <section class="page-contents">
             <main>
-                <h2>Journal</h2>
+                <div class="heading-bkg">
+                    <h2>Journal</h2>
+                </div>
+
+                <section class="journal-entry" id="20260811">
+                    <h3><time datetime="2026-08-14">August 14, 2026</time></h3>
+                    <section class="development-log">
+                        <h4>Development Log</h4>
+                        <ul>
+                            <li>"Under Construction" is now a link to the journal!
+                                <ul>
+                                    <li>Tested out making a separate call-to-action, but I didn't like it.</li>
+                                    <img src="journal-images/cta-draft.png" alt="homepage with call-to-action draft">
+                                </ul>
+                            </li>
+                            <li>Created cloud SVG for Journal page.</li>
+                            <li>Added cloud SVG to Journal page, including CSS styling.</li>
+                        </ul><!--Development Log UL-->
+                    </section><!--class="development-log"-->
+                    <section class="todo">
+                        <h4>Todo</h4>
+                        <ul>
+                            <li>Test post-commit site.</li>
+                            <li>Add anonymized resume.</li>
+                        </ul>
+                        <h4>Additional Todos</h4>
+                        <ul>
+                            <li>Write the personal About-Me page.</li>
+                            <li>Log bugs and releases in Jira. Add priorities and statuses.</li>
+                            <li>Refactor HTML and CSS for Credits page.</li>
+                        </ul>
+                    </section><!--class="todo"-->
+                </section>
                 <section class="journal-entry" id="20260811">
                     <h3><time datetime="2026-08-11">August 11, 2026</time></h3>
                     <section class="development-log">
                         <h4>Development Log</h4>
                         <ul>
                             <li>Tested site on desktop and mobile.</li>
-                            <li>Verified that bookmarking my site on my iPhone resulted in displaying my favicon on the
+                            <li>Verified that bookmarking my site on my iPhone resulted in displaying my favicon on
+                                the
                                 desktop!</li>
-                            <li>Determined 404 page does not work correctly if it is routed to from within a directory.
+                            <li>Determined 404 page does not work correctly if it is routed to from within a
+                                directory.
                                 <ul>
                                     <li>Issue: CSS does not load.</li>
                                     <li>Issue: Links do not resolve to correct locations.</li>
@@ -75,12 +109,14 @@
                         <ul>
                             <li>After commit, site map is missing journal link in header — Should be fixed by next
                                 commit.</li>
-                            <li>Ended up on <code>credits.html</code>. Need to determine which file is linking to that
+                            <li>Ended up on <code>credits.html</code>. Need to determine which file is linking to
+                                that
                                 page.<ul>
                                     <li>Not able to reproduce.</li>
                                     <li>Found a few cases of <code>credits/</code>.</li>
                                     <li>Updated all of those to <code>credits/index.html</code>.</li>
-                                    <li>I don't think <code>credits/</code> likely caused the issue, but I'm not finding
+                                    <li>I don't think <code>credits/</code> likely caused the issue, but I'm not
+                                        finding
                                         <code>credits.html</code> in my code.
                                         <ul>
                                             <li>Will remove the page from my repository.</li>
@@ -100,8 +136,10 @@
                                 companies instead of dates.</li>
                             <li>Project pages. Get all of that documented. Some are already up, but probably not
                                 finished and definitely not incorporated into the site map.</li>
-                            <li>Templates, eventually, so I don't have to copy and paste my header and footer every time
-                                and so I can handle the journal as daily files instead of a single massive html.</li>
+                            <li>Templates, eventually, so I don't have to copy and paste my header and footer every
+                                time
+                                and so I can handle the journal as daily files instead of a single massive html.
+                            </li>
                         </ul>
                     </section><!--class="todo"-->
                 </section>
@@ -111,8 +149,10 @@
                         <h4>Development Log</h4>
                         <ul>
                             <li>Made adjustments to 404.svg.</li>
-                            <li>Investigated why bookmarking my site on my iPhone did not result in saving my favicon.
-                            <li>Investigated margins issue. It appears to be resolved. I was using "margin" in places I
+                            <li>Investigated why bookmarking my site on my iPhone did not result in saving my
+                                favicon.
+                            <li>Investigated margins issue. It appears to be resolved. I was using "margin" in
+                                places I
                                 should
                                 have been
                                 using "padding".</li>
@@ -126,7 +166,8 @@
                         </ul>
                         <h4>Additional Todos</h4>
                         <ul>
-                            <li>Verify right margins for content cards and investigate why <code>&lt;p&gt;</code> and
+                            <li>Verify right margins for content cards and investigate why <code>&lt;p&gt;</code>
+                                and
                                 <code>&lt;a&gt;</code> elements are not properly contained in the display cards.
                             </li>
                             <li>Log bugs and releases in Jira. Add priorities and statuses.</li>
@@ -144,13 +185,15 @@
                             <li>Some additional edits to table.</li>
                             <li>Added CSS for table.</li>
                             <li>Started an SVG for the 404 page.</li>
-                            <li>Investigated bottom padding issue. This seems like an iOS thing. I've implemented the
+                            <li>Investigated bottom padding issue. This seems like an iOS thing. I've implemented
+                                the
                                 fix I can
                                 find,
                                 but the issue remains. What I'm finding suggests it's an issue specific to when the
                                 Apple Glass
                                 (I think
-                                it's Apple Glass, anyway) nav bar is visible. I'm not finding anything suggestions other
+                                it's Apple Glass, anyway) nav bar is visible. I'm not finding anything suggestions
+                                other
                                 than
                                 the
                                 <code>padding-bottom: env(safe-area-inset-bottom);</code> and <code>dvh</code>
@@ -166,7 +209,8 @@
                         </ul>
                         <h4>Additional Todos</h4>
                         <ul>
-                            <li>Verify right margins for content cards and investigate why <code>&lt;p&gt;</code> and
+                            <li>Verify right margins for content cards and investigate why <code>&lt;p&gt;</code>
+                                and
                                 <code>&lt;a&gt;</code> elements are not properly contained in the display cards.
                             </li>
                             <li>Log bugs and releases in Jira. Add priorities and statuses.</li>
@@ -186,11 +230,13 @@
                             </li>
                             <li>Developed html for 404 page minus SVG.
                                 <ul>
-                                    <li>JavaScript for the 404 page was suggested by VS Code. Accepted. Not yet tested.
+                                    <li>JavaScript for the 404 page was suggested by VS Code. Accepted. Not yet
+                                        tested.
                                     </li>
                                 </ul>
                             </li><!--Developed html for 404 page - SVG.-->
-                            <li>Asked ChatGPT about why I was getting white space under my footer for my about me and
+                            <li>Asked ChatGPT about why I was getting white space under my footer for my about me
+                                and
                                 credits
                                 pages.
                                 <ul>
@@ -204,12 +250,14 @@
                             <li>Wrote a blog post on why I was developing the about me page the way I was.</li>
                             <li>Wrote a followup blog post on AI usage and word choice in that blog post</li>
                             <li>Finished the About-Me Experience page.</li>
-                            <li>Started working on a professional About-Me page. Realized it wasn't an about me page.
+                            <li>Started working on a professional About-Me page. Realized it wasn't an about me
+                                page.
                                 Finished a
                                 first
                                 draft
                                 of that document.</li>
-                            <li>Worked with ChatGPT to get insights to use to develop an actual professional about-me
+                            <li>Worked with ChatGPT to get insights to use to develop an actual professional
+                                about-me
                                 page.</li>
                             <li>Started a blog post on developing the professional about-me page.</li>
                         </ul><!--Development Log UL-->
@@ -222,7 +270,8 @@
                         </ul>
                         <h4>Additional Todos</h4>
                         <ul>
-                            <li>Verify right margins for content cards and investigate why <code>&lt;p&gt;</code> and
+                            <li>Verify right margins for content cards and investigate why <code>&lt;p&gt;</code>
+                                and
                                 <code>&lt;a&gt;</code> elements are not properly contained in the display cards.
                             </li>
                             <li>Log bugs and releases in Jira. Add priorities and statuses.</li>
@@ -234,7 +283,8 @@
                 <section class="journal-entry" id="20260803">
                     <h3><time datetime="2026-08-03 ">August 3, 2026</time></h3>
                     <ul>
-                        <li>Updates to site structure to allow for page-specific styling, credits, changelogs, versions,
+                        <li>Updates to site structure to allow for page-specific styling, credits, changelogs,
+                            versions,
                             etc.
                         </li>
                         <li>Workable limited responsiveness for header/footer CSS. Learned about clamp().</li>
@@ -269,7 +319,8 @@
                     <h3><time datetime="2026-07-30">July 30, 2026</time></h3>
                     <ul>
                         <li>Developed first draft of moon icon.</li>
-                        <li>Created individual files for monogram iterations for eventual inclusion in relevant project
+                        <li>Created individual files for monogram iterations for eventual inclusion in relevant
+                            project
                             page.
                         </li>
                     </ul>
@@ -314,7 +365,8 @@
                 <section class="journal-entry" id="20260728">
                     <h3><time datetime="2026-07-28">July 28, 2026</time></h3>
                     <ul>
-                        <li>Started working on a spreadsheet of data related to a mobile game called "Tokyo Debunker."
+                        <li>Started working on a spreadsheet of data related to a mobile game called "Tokyo
+                            Debunker."
                         </li>
                         <li>Applied for 5 jobs, including a very stretch technical writer position.</li>
                         <li>Caught up on journal entries.</li>
@@ -341,7 +393,8 @@
                 <section class="journal-entry" id="20260723">
                     <h3><time datetime="2026-07-23">July 23, 2026</time></h3>
                     <ul>
-                        <li>Attended a job fair and began researching attendees to create a database including business
+                        <li>Attended a job fair and began researching attendees to create a database including
+                            business
                             names,
                             official
                             websites, career pages, job boards, LinkedIn pages, etc.</li>
@@ -367,8 +420,9 @@
                             </ul>
                         </li>
                     </ul>
-                </section>
-        </section>
+                </section> <!--20260721-->
+
+        </section> <!--class="page-contents"-->
     </main>
     <footer>
         <p><span id="author"><a href="../about-me.html">AECochran</a></span>

@@ -36,7 +36,8 @@ main .page-contents .journal-entry {
         10px 10px 10px #0000001a;
 }
 
-main .page-contents .journal-entry .development-log, main .page-contents .journal-entry .todo {
+main .page-contents .journal-entry .development-log,
+main .page-contents .journal-entry .todo {
     padding-left: .6rem;
 }
 
@@ -51,4 +52,31 @@ main .page-contents .journal-entry code {
     border-radius: 5px;
     border: solid #4495e0B3;
     background-color: #4495e01a;
+}
+
+main h2 {
+    width: min(85dvw, 750px);
+    padding-left: 2.5rem;
+    padding-top: 2rem;
+    font-family: Caveat, cursive;
+    font-size: 3.75rem
+}
+
+main .heading-bkg {
+    width: min(85dvw, 750px);
+    background-image: url("cloud.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-position-x: left;
+    height: 8rem;
+    color: #00002b;
+    margin-bottom: .8rem;
+    
+}
+
+
+main img {
+    width: clamp(80px, 80%, 800px);
+    max-height: 800px;
 }

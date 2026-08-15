@@ -32,13 +32,19 @@ main {
 
 .under-construction {
     font-family: 'Splash';
-    position: relative;
-    top: 6rem;
-    color: #f0f8ff;
     font-size: 7rem;
     text-align: center;
     margin: 2rem 0;
-    text-shadow: 2px 2px 4px #ffff00D3, -2px -2px 4px #ffb300D3;
+    text-shadow: 1px 1px 4px #ffff00D3, -1px -1px 4px #ffb300D3;
+    position: relative;
+    top: 6rem;
+    letter-spacing: .5rem;
+    text-decoration: none;
+}
+
+.under-construction a {
+    text-decoration: none;
+    color: #f0f8ff;
 }
 
 /* Branding Styling */
