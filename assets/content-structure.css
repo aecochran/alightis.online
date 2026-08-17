@@ -54,3 +54,10 @@ main .h6 {
 .h6 ul li:nth-of-type(n+2) {
     padding-top: .25rem;
 }
+
+main .page-contents ul {
+    padding-left: 1.5rem;
+}
+main .page-contents li {
+    line-height: 1.5em;
+}

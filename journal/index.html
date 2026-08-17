@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credits</title>
+    <title>Journal</title>
     <link rel="icon" type="image/png" href="../assets/key-branding/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="../assets/key-branding/favicon.svg">
     <link rel="shortcut icon" href="../assets/key-branding/favicon.ico">
@@ -24,7 +24,7 @@
 <body>
     <header>
         <div class="branding">
-            <a class="branding" href="index.html">
+            <a class="branding" href="/">
                 <img id="logo" src="../assets/key-branding/Moonogram-icon-final.svg" alt="">
                 <div id="wordmark">
                     <h1><img id="site-title" src="../assets/key-branding/ALightIs.Online.svg" alt="ALightIs.Online">
@@ -37,10 +37,10 @@
         <nav aria-label="Main">
             <div class="nav-spacer" aria-hidden="true"></div>
             <ul>
-                <li id="home"><a href="../index.html">Home</a></li>
-                <li id="journal" class="current-page"><a href="../journal/index.html">Journal</a></li>
-                <li id="about-me"><a href="../about-me/index.html">About Me</a></li>
-                <li id="credits"><a href="../credits/index.html">Credits</a></li>
+                <li id="home"><a href="/">Home</a></li>
+                <li id="journal" class="current-page"><a href="../journal/">Journal</a></li>
+                <li id="about-me"><a href="../about-me/">About Me</a></li>
+                <li id="credits"><a href="../credits/">Credits</a></li>
             </ul>
             <div class="nav-spacer" aria-hidden="true"></div>
         </nav>
@@ -51,6 +51,56 @@
                 <div class="heading-bkg">
                     <h2>Journal</h2>
                 </div>
+                <section class="journal-entry" id="20260816">
+                    <h3><time datetime="2026-08-16">August 16, 2026</time></h3>
+                    <section class="development-log">
+                        <h4>Development Log</h4>
+                        <ul>
+                            <li>Started uploading bugs to Jira</li>
+                            <ul>
+                                <li>Jira is not amazing for test management.</li>
+                                <li>It might be more doable if sub-tasks weren't the lowest level of work or if you
+                                    could have more than
+                                    three levels of work, but the Test Management → Test Suite → Test Case format I'm
+                                    used to doesn't
+                                    exist.</li>
+                                <li>Also, the Title, Summary, Instructions, Data, Expected Result, Actual Result, Status
+                                    (Pass/Fail)
+                                    type of thing would be hard to set up, especially with a free version of Jira.</li>
+                            </ul><!--Jira-->
+                            <li>Tested site and discovered some navigation issues. Updated navigation.</li>
+                            <img src="journal-images/jira20260816.png" alt="bugs encountered during today's testing">
+                            <li>Created a <a href="/testing.ods">testing spreadsheet</a> to help with tracking tests.
+                            </li>
+                        </ul><!--Development Log UL-->
+                    </section><!--class="development-log"-->
+                    <section class="todo">
+                        <h4>Todo</h4>
+                        <ul>
+                            <li>Test post-commit site.</li>
+                            <li>Continue logging bugs in Jira. Add priorities and statuses.</li>
+                        </ul>
+                        <h4>Additional Todos</h4>
+                        <ul>
+                            <li>Write the personal About-Me page.</li>
+                            <li>Refactor HTML and CSS for Credits page.</li>
+                            <li>Professional profile</li>
+                            <li>Project pages. Get all of that documented. Some are already up, but probably not
+                                finished and definitely not incorporated into the site map.</li>
+                            <li>Templates, eventually, so I don't have to copy and paste my header and footer every
+                                time
+                                and so I can handle the journal as daily files instead of a single massive html.
+                            </li>
+                        </ul>
+                    </section><!--class="todo"-->
+                    <section class="additional-work">
+                        <h4>Additional Work</h4>
+                        <ul>
+                            <li>Continued collecting details about employers who attended the job fair on July 23rd.
+                            </li>
+                        </ul><!--Additional Work UL-->
+                    </section><!--class="additional-work"-->
+                </section>
                 <section class="journal-entry" id="20260815">
                     <h3><time datetime="2026-08-15">August 15, 2026</time></h3>
                     <section class="development-log">
@@ -546,7 +596,7 @@
                         <li>Developed monogram and favicon.</li>
                         <li>Began developing personal website.
                             <ul>
-                                <li>Created main <a href="../index.html">index.html</a> page. Hand-coded HTML.</li>
+                                <li>Created main <a href="/index.html">index.html</a> page. Hand-coded HTML.</li>
                                 <li>Created files, <code>&lt;head&gt;</code> sections, headers, and footers for core
                                     pages
                                     (home.html,
@@ -559,9 +609,9 @@
         </section> <!--class="page-contents"-->
     </main>
     <footer>
-        <p><span id="author"><a href="../about-me/index.html">AECochran</a></span>
+        <p><span id="author"><a href="../about-me/">AECochran</a></span>
             <span class="bullet"> • </span>
-            <span id="credits"><a href="../credits/index.html">Credits</a></span>
+            <span id="credits"><a href="../credits/">Credits</a></span>
             <span class="bullet"> • </span>
             <span id="site-map"><a href="../site-map.html">Site Map</a></span>
         </p>
