@@ -1,0 +1,50 @@
+<section class="journal-entry" id="20260811">
+    <h3><time datetime="2026-08-11">August 11, 2026</time></h3>
+    <section class="development-log">
+        <h4>Development Log</h4>
+        <ul>
+            <li>Tested site on desktop and mobile.</li>
+            <li>Verified that bookmarking my site on my iPhone resulted in displaying my favicon on the desktop!.
+            <li>Determined 404 page does not work correctly if it is routed to from within a directory.
+                <ul>
+                    <li>Issue: CSS does not load.</li>
+                    <li>Issue: Links do not resolve to correct locations.</li>
+                    <li>Root Cause: Page-relative linking. Need to include absolute links instead of relative links, at
+                        least for 404 page.</li>
+                </ul>
+            </li>
+            <li>Imported journal</li>
+            <li>Began CSS for journal</li>
+        </ul><!--Development Log UL-->
+    </section><!--class="development-log"-->
+    <section class="todo">
+        <h4>Todo</h4>
+        <ul>
+            <li>After commit, site map is missing journal link in header — Should be fixed by next commit.</li>
+            <li>Ended up on <code>credits.html</code>. Need to determine which file is linking to that page.<ul>
+                    <li>Not able to reproduce.</li>
+                    <li>Found a few cases of <code>credits/</code>.</li>
+                    <li>Updated all of those to <code>credits/index.html</code>.</li>
+                    <li>I don't think <code>credits/</code> likely caused the issue, but I'm not finding
+                        <code>credits.html</code> in my code. Will remove the page from my repository.
+                    </li>
+                </ul>
+            </li>
+            <li>Test post-commit site.</li>
+        </ul>
+        <h4>Additional Todos</h4>
+        <ul>
+            <li>Write the personal About-Me page.</li>
+            <li>Log bugs and releases in Jira. Add priorities and statuses.</li>
+            <li>Refactor HTML and CSS for Credits page.</li>
+            <li>Anonymize resume. Add and begin expanded details sections. Consider structuring by
+                companies instead of dates.</li>
+            <li>Project pages. Get all of that documented. Some are already up, but probably not
+                finished and definitely not incorporated into the site map.</li>
+            <li>Templates, eventually, so I don't have to copy and paste my header and footer every
+                time
+                and so I can handle the journal as daily files instead of a single massive html.
+            </li>
+        </ul>
+    </section><!--class="todo"-->
+</section>
