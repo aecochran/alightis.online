@@ -4,12 +4,12 @@
 }
 
 body,
-h1,
-h2,
-h3, h4, div, span,
-p,
-ul,
-li {
+#resume h1,
+#resume h2,
+#resume h3, #resume h4, #resume div, #resume span,
+#resume p,
+#resume ul,
+#resume li {
     margin: 0;
     padding: 0;
 }
@@ -26,7 +26,7 @@ main {
     margin: 2rem;
 }
 
-.body article {
+#resume {
     max-width: 1100px;
     min-width: 57rem;
     margin: 2rem auto;
@@ -35,25 +35,25 @@ main {
     border: 1px solid #d0d0d0;
         box-shadow: 0 0px 5px rgba(0, 0, 0, .25);
 }
-article a{
+#resume a {
     text-decoration: none;
     color:inherit;
 }
-article a:hover, article a:focus{
+#resume a:hover, #resume a:focus {
     text-decoration: underline;
     color:blue
 }
-.resume-header{
+#resume .resume-header {
     text-align: center;
 }
-h1{
+#resume h1 {
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, .3);
     font-size: 3.2rem;
 }
-h2{
+#resume h2 {
     font-family: "Arial Nova", Arial, sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -62,85 +62,85 @@ h2{
     font-size: 1.2rem;
     margin: .5rem 0;
 }
-h3{
+#resume h3 {
     font-size: 1.15rem;
     font-weight: normal;
     display:flex;
     margin: 1.25rem 0 .25rem 0;
 }
-span{
+#resume span {
     margin:0 .25rem 0 0 ;
 }
-p{
+#resume p {
     margin: .25rem 0;
     font-size: 1rem;
 }
-li{
+#resume li{
     margin: .0125rem 0;
 }
 h2+section>h3 {
     margin-top: 0;
 }
-.skill-heading{
+#resume .skill-heading {
     font-weight:bold;
     margin: 0;
 }
-.key-skill-item{
+#resume .key-skill-item {
     margin:0;
 }
 
-.job-heading {
+#resume .job-heading {
     display: flex;
     flex-direction: row;
 }
 
-.job-title, .degree{
+#resume .job-title, #resume .degree{
     font-weight:bold;
 }
-.location{
+#resume .location {
     font-style: italic;
 }
-.job-period{
+#resume .job-period {
     flex-grow:1;
     text-align: right;
 }
-h4{
+#resume h4 {
     font-size: 1.1rem;
     font-weight:bold;
     margin: .125rem 0;
 }
-hr{
+#resume hr {
     margin: 20px -2rem;
     height: 1px;
     box-shadow: 0 0px 5px rgba(0, 0, 0, .25); 
     background-color: black;
 }
-#skill-sections{
+#resume #skill-sections {
     display:flex; 
     flex-wrap: wrap;
     gap: 5px;
 }
-#qa-testing{
+#resume #qa-testing {
     flex: 1 0 16em;
     min-width: 16em;
    }
- #analysis-documentation {
+ #resume #analysis-documentation {
     flex: 1 0 14em;
     min-width: 14em;
     }
-  #tools {
+  #resume #tools {
     flex: 1 0 16.5em;
     min-width: 16.5em;
      }
 
  
-  ul{
+#resume  ul{
     padding: 0 0 0 1.25em;
     list-style-position: inside;
     font-size: 1rem;
   }
 
-  #headline{
+#resume  #headline{
     font-family: "Arial Nova", Arial, sans-serif;
   
   }
