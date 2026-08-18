@@ -23,6 +23,7 @@ The development repository is private while:
 - CSS3
 - Visual Studio Code
 - GitHub
+- Inkscape
 
 ## Development Notes
 
