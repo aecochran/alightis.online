@@ -57,18 +57,18 @@ main .heading-bkg {
 
 }
 
-main h3 {
+main .asset h3 {
     font-size: 1.75rem;
     margin-bottom: .5rem;
     font-family: 'Afacad';
     letter-spacing: 0.02rem;
 }
 
-p {
+.asset p {
     line-height: 1.5em;
 }
 
-img {
+.asset img {
     max-width: 30rem;
     max-height: 9.375rem;
     margin: .5rem;
